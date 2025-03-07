@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Veelgestelde Vragen - Stralux</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+
+    /* Faq Css */
+    .faq-section {
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: left;
+      padding: 30px;
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    .faq-section h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .faq-header {
+      margin-bottom: 20px;
+      padding-left: 15px;
+      border-left: 3px solid #000000;
+    }
+    .faq-header h3 {
+      font-size: 1.5em;
+      margin: 0;
+    }
+    .faq-item {
+      border-bottom: 1px solid #e1e1e1;
+      padding: 15px 0;
+    }
+    .faq-question {
+      background: none;
+      border: none;
+      outline: none;
+      width: 100%;
+      text-align: left;
+      font-size: 1.1em;
+      font-weight: 700;
+      cursor: pointer;
+      padding: 10px;
+      position: relative;
+      transition: background-color 0.3s;
+    }
+    .faq-question:hover {
+      background-color: #f0f0f0;
+    }
+    .faq-question::after {
+      content: "\002B";
+      position: absolute;
+      right: 20px;
+      font-size: 1.5em;
+      transition: transform 0.3s;
+    }
+    .faq-item.active .faq-question::after {
+      transform: rotate(45deg);
+    }
+    .faq-answer {
+      max-height: 0;
+      opacity: 0;
+      overflow: hidden;
+      transition: max-height 0.5s ease, opacity 0.5s ease;
+      padding: 0 10px;
+    }
+    .faq-item.active .faq-answer {
+      max-height: 500px;
+      opacity: 1;
+      padding-top: 10px;
+    }
+    .faq-answer p {
+      margin: 0 0 10px;
+      font-size: 1em;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container header-container">
+      <div class="header-logo">
+        <img src="/images/logotest.png" alt="Stralux Logo">
+      </div>
+    </div>
+    <div class="header-social">
+      <a href="https://www.instagram.com/your_instagram_page" target="_blank">
+        <img src="/images/insta.png" alt="Instagram">
+      </a>
+      <a href="https://www.facebook.com/your_facebook_page" target="_blank">
+        <img src="/images/facebook.png" alt="Facebook">
+      </a>
+    </div>
+  </header>
+  <nav>
+    <div class="container nav-container">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="overmij.html" class="nav-link">Over Mij</a>
+      <a href="faq.html" class="nav-link active">Veelgestelde Vragen</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </div>
+  </nav>
+  <main class="container">
+    <section class="section faq-section">
+      <h2>Veelgestelde Vragen</h2>
+      <div class="faq-header">
+        <h3>Wat wil je graag weten?</h3>
+      </div>
+      
+      <div class="faq-item">
+        <button class="faq-question">Hoe werkt luchtgommen?</button>
+        <div class="faq-answer">
+          <p>Luchtgommen maakt gebruik van een compressor en fijne keramische korrels om oude vernis- of olielagen op een zachte wijze te verwijderen, zodat de oorspronkelijke houtstructuur behouden blijft.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <button class="faq-question">Wat is zandstralen?</button>
+        <div class="faq-answer">
+          <p>Zandstralen gebruikt een hogere druk en scherpere abrasieven om hardnekkige resten, roest en oude verf te verwijderen. Deze techniek is geschikt voor robuuste materialen zoals metaal en beton, maar kan te agressief zijn voor delicate houtsoorten.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <button class="faq-question">Hoe vraag ik een offerte aan?</button>
+        <div class="faq-answer">
+          <p>U kunt via ons offerteformulier uw projectomschrijving en foto's uploaden, zodat wij een nauwkeurige prijsopgave kunnen maken voor uw specifieke project.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <button class="faq-question">Welke projecten voert Stralux uit?</button>
+        <div class="faq-answer">
+          <p>Wij restaureren houten trappen, vloeren en meubelen met behulp van luchtgommen en zandstralen, afhankelijk van het type materiaal en de gewenste afwerking.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <button class="faq-question">Hoe snel ontvang ik een reactie?</button>
+        <div class="faq-answer">
+          <p>Na ontvangst van uw aanvraag streven wij ernaar binnen enkele werkdagen een prijsopgave te doen toekomen.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <button class="faq-question">Hoe lang duurt een project gemiddeld?</button>
+        <div class="faq-answer">
+          <p>De doorlooptijd varieert per project, maar doorgaans kunt u binnen 1 tot 2 weken resultaat verwachten, afhankelijk van de omvang en complexiteit.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <button class="faq-question">Welke materialen worden gebruikt?</button>
+        <div class="faq-answer">
+          <p>Wij maken gebruik van hoogwaardige en duurzame materialen, zorgvuldig afgestemd op uw project en wensen.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <button class="faq-question">Kan ik een afspraak maken voor een consult?</button>
+        <div class="faq-answer">
+          <p>Ja, u kunt altijd contact met ons opnemen voor een vrijblijvend consult om uw wensen te bespreken en de mogelijkheden te verkennen.</p>
+        </div>
+      </div>
+    </section>
+    <div class="offerte-btn">
+      <a href="contact.html">Vraag je offerte aan</a>
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Stralux. Alle rechten voorbehouden.<br>
+         Website gemaakt door Jaico.
+      </p>
+    </div>
+  </footer>
+  <script>
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(item => {
+      const question = item.querySelector('.faq-question');
+      question.addEventListener('click', () => {
+        item.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+</html>

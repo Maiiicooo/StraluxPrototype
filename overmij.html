@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Over Mij - Stralux</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Over mij css */
+    .about-container {
+      display: flex;
+      align-items: flex-start;
+      gap: 40px;
+      padding: 20px;
+      justify-content: center;
+    }
+    .about-image {
+      flex: 0 0 300px;
+      max-width: 300px;
+    }
+    .about-image img {
+      width: 100%;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+    .about-details {
+      flex: 1;
+      display: flex;
+      gap: 20px;
+    }
+    .about-skills {
+      flex: 0 0 200px;
+      max-width: 200px;
+      border-right: 2px solid #000;
+      padding-right: 20px;
+    }
+    .about-skills ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      text-align: left;
+    }
+    .about-skills li {
+      font-size: 1.1em;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+    .about-description {
+      flex: 1;
+      padding-left: 20px;
+    }
+    .about-description p {
+      font-size: 1.1em;
+      line-height: 1.8;
+      text-align: justify;
+    }
+    @media (max-width: 768px) {
+      .about-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .about-details {
+        flex-direction: column;
+        border: none;
+        padding: 0;
+      }
+      .about-skills {
+        border-right: none;
+        border-bottom: 2px solid #000;
+        padding-bottom: 20px;
+      }
+      .about-description {
+        padding-left: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container header-container">
+      <div class="header-logo">
+        <img src="/images/logotest.png" alt="Stralux Logo">
+      </div>
+      <div class="header-text">
+      </div>
+    </div>
+    <div class="header-social">
+      <a href="https://www.instagram.com/your_instagram_page" target="_blank">
+        <img src="instagram.png" alt="Instagram">
+      </a>
+      <a href="https://www.facebook.com/your_facebook_page" target="_blank">
+        <img src="facebook.png" alt="Facebook">
+      </a>
+    </div>
+  </header>
+  
+  <!-- Navigatie -->
+  <nav>
+    <div class="container nav-container">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="overmij.html" class="nav-link active">Over Mij</a>
+      <a href="faq.html" class="nav-link">Veelgestelde Vragen</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </div>
+  </nav>
+  
+  <!-- Hoofdinhoud: Over Mij -->
+  <main class="container">
+    <section id="over-mij" class="section about-section">
+      <h2>Over Mij</h2>
+      <div class="about-container">
+        <div class="about-image">
+          <img src="/images/sproetmooi.jpeg" alt="Maico">
+        </div>
+        <div class="about-details">
+          <div class="about-skills">
+            <ul>
+              <li>∨ Kwaliteit</li>
+              <li>∨ Precisiewerk</li>
+              <li>∨ Service</li>
+              <li>∨ Vakmanschap</li>
+              <li>∨ Duurzaamheid</li>
+              <li>∨ Flexibiliteit</li>
+            </ul>
+          </div>
+          <div class="about-description">
+            <p>
+              Met vakmanschap en oog voor detail vernieuw ik houten <b style="color: rgb(75, 70, 70);">trappen</b>, vloeren en meubelen, met behoud van hun authentieke charme. Daarnaast specialiseert mijn zandstraalwerk zich in natuursteen, gevels en metalen oppervlakken voor een duurzame en esthetische afwerking.
+            </p>
+            <p style="text-align: center;" style="color: rgb(rgb(40, 40, 43));"><h3>REVIVE, RESTORE, REINVENT.</h3></p>
+          </div>
+        </div>
+      </div>
+      <div class="offerte-btn">
+        <a href="contact.html">Vraag je offerte aan</a>
+      </div>
+    </section>
+  </main>
+  
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>
+        &copy; 2025 Stralux. Alle rechten voorbehouden.<br>
+        Website gemaakt door Jaico.
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

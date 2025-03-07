@@ -1,0 +1,346 @@
+/* Basis reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header styling */
+header {
+  background-color: #000000;
+  padding: 40px 20px;
+  text-align: center;
+  color: #ffffff;
+  position: relative;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-logo {
+  background-color: transparent;
+}
+
+.header-logo img {
+  max-height: 100px;
+  width: auto;
+  margin-bottom: 20px;
+}
+
+.header-text h1 {
+  font-size: 3em;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.header-text p {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+/* Instagram en Facebook iconen in de header (verticaal onder elkaar) */
+.header-social {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.header-social img {
+  width: 30px;
+  height: auto;
+}
+
+/* Navigatie styling */
+nav {
+  background-color: #ffffff;
+  border-bottom: 2px solid #000000;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.nav-link {
+  color: #000000;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 0 15px;
+  font-weight: 700;
+  transition: background-color 0.3s, color 0.3s;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #ffffff;
+  background-color: #000000;
+  border-bottom: 2px solid #ffffff;
+}
+
+/* Algemene sectiestyling */
+.section {
+  margin-bottom: 40px;
+  padding: 40px 20px;
+  background-color: #f7f7f7;
+  border: 1px solid #e1e1e1;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Difference sectie */
+.difference-section {
+  background: linear-gradient(135deg, #e8e8e8, #ffffff);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  padding: 60px 20px;
+  margin-bottom: 50px;
+}
+
+.difference-section h2 {
+  font-size: 2.6em;
+  margin-bottom: 30px;
+  color: #000000;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.difference-section h2::after {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 4px;
+  background-color: #000000;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.difference-section p {
+  font-size: 1.2em;
+  max-width: 900px;
+  margin: 0 auto 25px;
+  line-height: 1.8;
+  text-align: center;
+}
+
+/* Algemene kopjes en paragrafen */
+.section h2 {
+  font-size: 2.2em;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  color: #000000;
+}
+
+.section p {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+
+/* Diensten sectie: service cards */
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.service-card {
+  background-color: #ffffff;
+  color: #000000;
+  border: 2px solid #000000;
+  padding: 30px 20px;
+  flex: 1 1 280px;
+  max-width: 350px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.service-card h3 {
+  margin-top: 15px;
+  font-size: 1.5em;
+  letter-spacing: 1px;
+}
+
+.service-card p {
+  font-size: 1em;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+
+/* Service logo */
+.service-icon {
+  margin: 0 auto;
+  width: 90px;
+  height: 90px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.service-icon img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Specifieke styling voor de 'Meubels' card */
+.service-card.no-bg {
+  background-color: transparent;
+}
+
+/* Offerte knop */
+.offerte-btn {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.offerte-btn a {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #000000;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.offerte-btn a:hover {
+  background-color: #ffffff;
+  color: #000000;
+  border: 2px solid #000000;
+}
+
+/* Projecten sectie: grid layout */
+.projecten-section {
+  background-color: #f7f7f7;
+  padding: 40px 20px;
+  border: 1px solid #e1e1e1;
+  border-radius: 8px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.projecten-section h2 {
+  font-size: 2.2em;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.projecten-section p {
+  font-size: 1.1em;
+  margin-bottom: 30px;
+}
+
+.projecten-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* Projectafbeeldingen: vaste hoogte van 500px (kan aanpassen naar gewenste grootte) */
+.project-item img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  display: block;
+}
+
+.project-item {
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.project-caption {
+  padding: 15px;
+  text-align: left;
+}
+
+.project-caption h3 {
+  font-size: 1.3em;
+  margin-bottom: 8px;
+}
+
+.project-caption p {
+  font-size: 0.95em;
+  color: #555555;
+}
+
+/* Footer styling */
+footer {
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9em;
+  border-top: 2px solid #ffffff;
+}
+
+footer p {
+  line-height: 1.5;
+}
+
+/* Responsive styling */
+@media (max-width: 992px) {
+  .projecten-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .projecten-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+  }
+  .nav-link {
+    margin: 5px 0;
+  }
+  .services-container, .projecten-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  .offerte-form {
+    padding: 0 10px;
+  }
+}
