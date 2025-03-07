@@ -12,12 +12,12 @@ $mail = new PHPMailer(true);
 try {
     // Server settings – pas deze aan naar jouw SMTP-gegevens
     $mail->isSMTP();
-    $mail->Host       = 'outlook.office365.com';        // Jouw SMTP-server
+    $mail->Host       = 'smtp.office365.com';        // Jouw SMTP-server
     $mail->SMTPAuth   = true;
     $mail->Username   = 'info@stralux.eu'; // Jouw SMTP-gebruikersnaam
     $mail->Password   = '';             // Jouw SMTP-wachtwoord
     $mail->SMTPSecure = 'tls';                       // Beveiliging (tls of ssl)
-    $mail->Port       = 993;                         // SMTP-poort
+    $mail->Port       = 587;                         // SMTP-poort
 
     // Afzender en ontvanger
     $mail->setFrom('your_email@example.com', 'Stralux Offerte');
