@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,67 +16,80 @@
       padding: 20px;
       justify-content: center;
     }
+
     .about-image {
       flex: 0 0 300px;
       max-width: 300px;
     }
+
     .about-image img {
       width: 100%;
       border-radius: 8px;
       object-fit: cover;
     }
+
     .about-details {
       flex: 1;
       display: flex;
       gap: 20px;
     }
+
     .about-skills {
       flex: 0 0 200px;
       max-width: 200px;
       border-right: 2px solid #000;
       padding-right: 20px;
     }
+
     .about-skills ul {
       list-style: none;
       padding: 0;
       margin: 0;
       text-align: left;
     }
+
     .about-skills li {
       font-size: 1.1em;
       margin-bottom: 10px;
       font-weight: 700;
     }
+
     .about-description {
       flex: 1;
       padding-left: 20px;
     }
+
     .about-description p {
       font-size: 1.1em;
       line-height: 1.8;
       text-align: justify;
     }
+
     @media (max-width: 768px) {
       .about-container {
         flex-direction: column;
         align-items: center;
       }
+
       .about-details {
         flex-direction: column;
         border: none;
         padding: 0;
       }
+
       .about-skills {
         border-right: none;
         border-bottom: 2px solid #000;
         padding-bottom: 20px;
       }
+
       .about-description {
         padding-left: 0;
       }
     }
   </style>
 </head>
+
 <body>
   <!-- Header -->
   <header>
@@ -95,7 +109,7 @@
       </a>
     </div>
   </header>
-  
+
   <!-- Navigatie -->
   <nav>
     <div class="container nav-container">
@@ -105,7 +119,7 @@
       <a href="contact.html" class="nav-link">Contact</a>
     </div>
   </nav>
-  
+
   <!-- Hoofdinhoud: Over Mij -->
   <main class="container">
     <section id="over-mij" class="section about-section">
@@ -126,10 +140,15 @@
             </ul>
           </div>
           <div class="about-description">
-            <p>
-              Met vakmanschap en oog voor detail vernieuw ik houten <b style="color: rgb(75, 70, 70);">trappen</b>, vloeren en meubelen, met behoud van hun authentieke charme. Daarnaast specialiseert mijn zandstraalwerk zich in natuursteen, gevels en metalen oppervlakken voor een duurzame en esthetische afwerking.
+            <p style="text-align: center;">
+              Met vakmanschap en oog voor detail vernieuw ik houten <b style="color: rgb(75, 70, 70);">trappen</b>,
+              <b style="color: rgb(75, 70, 70);">vloeren</b> en <b style="color: rgb(75, 70, 70);">meubelen</b>, met
+              behoud van hun authentieke charme. Daarnaast specialiseert mijn zandstraalwerk
+              zich in <b style="color: rgb(75, 70, 70);">natuursteen</b>, <b style="color: rgb(75, 70, 70);">gevels</b>
+              en <b style="color: rgb(75, 70, 70);">metalen</b>
+              oppervlakken voor een duurzame en esthetische afwerking.
             </p>
-            <p style="text-align: center;" style="color: rgb(rgb(40, 40, 43));"><h3>REVIVE, RESTORE, REINVENT.</h3></p>
+            <h3 style="text-align: center;">REVIVE, RESTORE, REINVENT.</h3>
           </div>
         </div>
       </div>
@@ -138,7 +157,7 @@
       </div>
     </section>
   </main>
-  
+
   <!-- Footer -->
   <footer>
     <div class="container">
@@ -149,4 +168,5 @@
     </div>
   </footer>
 </body>
+
 </html>
