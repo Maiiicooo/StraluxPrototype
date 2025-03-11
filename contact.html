@@ -138,26 +138,6 @@
       </p>
     </div>
   </footer>
-  
-  <!-- JavaScript voor AJAX verzending van het formulier -->
-  <script>
-    document.getElementById("submitButton").addEventListener("click", function(e) {
-      e.preventDefault();
-      var form = document.getElementById("offerteForm");
-      var formData = new FormData(form);
-      
-      fetch("sendmail.php", {
-        method: "POST",
-        body: formData
-      })
-      .then(response => response.text())
-      .then(text => {
-        document.getElementById("formMessage").innerHTML = text;
-      })
-      .catch(error => {
-        document.getElementById("formMessage").innerHTML = "Er is een fout opgetreden. Probeer het opnieuw.";
-      });
-    });
-  </script>
+
 </body>
 </html>
