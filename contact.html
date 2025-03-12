@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,8 +16,34 @@
       flex-direction: column;
       gap: 5px;
     }
+
+    /* Offerte knop */
+    .offerte-btn {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .offerte-btn button {
+      display: inline-block;
+      padding: 15px 30px;
+      background-color: #000000;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 700;
+      border-radius: 4px;
+      transition: background-color 0.3s, color 0.3s;
+      border: none;
+      cursor: pointer;
+    }
+
+    .offerte-btn button:hover {
+      background-color: #ffffff;
+      color: #000000;
+      border: 2px solid #000000;
+    }
   </style>
 </head>
+
 <body>
   <!-- Header -->
   <header>
@@ -50,9 +77,15 @@
     <section class="section offerte-section">
       <h2>Vraag je offerte aan</h2>
       <p>
-        Elk project is uniek. Geef hieronder zo gedetailleerd mogelijk aan wat uw wensen zijn, en voeg enkele foto's toe zodat wij een goede inschatting kunnen maken.
+        Elk project is uniek. Geef hieronder zo gedetailleerd mogelijk aan wat uw wensen zijn,
+        <!--en voeg enkele foto's toe -->
+        zodat wij een goede inschatting kunnen maken.
       </p>
-      <form id="offerteForm" class="offerte-form" action="sendmail.php" method="post" enctype="multipart/form-data">
+      <form id="offerteForm" class="offerte-form" action="https://formspree.io/f/xqapkgal" method="post"
+        enctype="multipart/form-data">
+        <!-- Verborgen input om na inzending terug te keren naar contact.html -->
+        <input type="hidden" name="_next" value="contact.html">
+
         <div class="form-group">
           <label for="voornaam">Voornaam *</label>
           <input type="text" id="voornaam" name="voornaam" required>
@@ -95,32 +128,32 @@
           <label for="boodschap">Boodschap *</label>
           <textarea id="boodschap" name="boodschap" rows="5" required></textarea>
         </div>
+
+        <!-- Upload Bestanden zit nog niet in het plan 
         <div class="form-group">
           <label for="foto">Foto's opladen *</label>
           <input type="file" id="foto" name="foto[]" multiple required>
           <small>Upload alle foto's in één keer.</small>
+          -->
+        </div>
+        <!-- Submit knop in het formulier -->
+        <div class="offerte-btn">
+          <button type="submit" id="submitButton">Verstuur aanvraag</button>
         </div>
       </form>
-      
-      <!-- Flex container voor de offerte-knop en Google Maps, nu onder elkaar -->
+
+      <!-- Google Maps -->
       <div class="offerte-map-container">
-        <div class="offerte-btn">
-          <a href="#" id="submitButton">Verstuur aanvraag</a>
-        </div>
         <div class="map-container">
-          <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2506.8869321282214!2d3.381138576879435!3d51.073637242297956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c343b0b73dc7d5%3A0xf18758ca6ff9a178!2sKruisbergstraat%2018%2C%208755%20Ruiselede!5e0!3m2!1snl!2sbe!4v1741162252334!5m2!1snl!2sbe" 
-            width="100%" 
-            height="300" 
-            style="border:0;" 
-            allowfullscreen="" 
-            loading="lazy">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2506.8869321282214!2d3.381138576879435!3d51.073637242297956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c343b0b73dc7d5%3A0xf18758ca6ff9a178!2sKruisbergstraat%2018%2C%208755%20Ruiselede!5e0!3m2!1snl!2sbe!4v1741162252334!5m2!1snl!2sbe"
+            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
           </iframe>
         </div>
       </div>
-      
+
       <div id="formMessage"></div>
-      
+
       <div class="contact-info">
         <h3>Een andere vraag?</h3>
         <p>Email: info@stralux.eu</p>
@@ -128,7 +161,7 @@
       </div>
     </section>
   </main>
-  
+
   <!-- Footer -->
   <footer>
     <div class="container">
@@ -138,6 +171,6 @@
       </p>
     </div>
   </footer>
-
 </body>
+
 </html>
