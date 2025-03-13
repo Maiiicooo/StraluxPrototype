@@ -7,7 +7,7 @@
   <title>Over Mij - Stralux</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="mobiel.css" media="screen and (max-width: 768px)">
+  <link rel="stylesheet" href="mobiel.css" media="screen and (max-width: 480px)">
   <style>
     /* Over mij css */
     .about-container {
@@ -91,6 +91,18 @@
   </style>
 </head>
 
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navMenu = document.querySelector(".nav-container");
+
+    menuToggle.addEventListener("click", function () {
+      navMenu.classList.toggle("active");
+    });
+  });
+</script>
+
+
 <body>
   <!-- Header -->
   <header>
@@ -110,6 +122,11 @@
       </a>
     </div>
   </header>
+
+  <!-- Hamburger menu knop -->
+  <div class="menu-toggle" onclick="toggleMenu()">
+    ☰
+  </div>
 
   <!-- Navigatie -->
   <nav>

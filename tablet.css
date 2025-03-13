@@ -1,0 +1,57 @@
+@media (max-width: 1024px) {
+    /* Dropdown navigatie voor mobiel en tablet/iPad */
+    .menu-toggle {
+      display: block;
+      font-size: 24px;
+      font-weight: bold;
+      cursor: pointer;
+      text-align: center;
+      padding: 15px;
+      background: #444;
+      color: white;
+      border-bottom: 2px solid #555;
+    }
+  
+    .nav-container {
+      display: none;
+      flex-direction: column;
+      background: #333;
+      text-align: center;
+      width: 100%;
+    }
+  
+    .nav-container a {
+      display: block;
+      padding: 15px;
+      color: white;
+      text-decoration: none;
+      border-bottom: 1px solid #555;
+      transition: background 0.3s ease;
+    }
+  
+    .nav-container a:hover {
+      background: #555;
+    }
+  
+    .nav-container.active {
+      display: flex;
+    }
+  
+    /* Algemene tekst aanpassingen voor tablets en iPads */
+    body {
+      font-size: 16px; /* Pas dit eventueel aan voor een prettige leesgrootte */
+      margin: 0 20px;
+    }
+  
+    h1, h2, p {
+      margin-left: 20px;
+      margin-right: 20px;
+      text-align: center;  /* Algemeen gecentreerd, tenzij specifiek overschreven */
+    }
+    
+    /* Als je bepaalde teksten (zoals de h3 in About) anders wilt hebben, overschrijf die hier */
+    .about-description h3 {
+      text-align: left; /* Bijvoorbeeld links uitlijnen */
+    }
+  }
+  
