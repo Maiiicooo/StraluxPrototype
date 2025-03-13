@@ -1,0 +1,54 @@
+@media (max-width: 768px) {
+    .about-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .about-image {
+      max-width: 80%;
+    }
+  
+    .about-details {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .about-skills {
+      width: 100%;
+      max-width: 300px;
+      border-right: none;
+      border-bottom: 2px solid #000;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+    }
+  
+    .about-skills ul {
+      padding: 0;
+      text-align: center;
+    }
+  
+    .about-skills li {
+      display: block;
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+  
+    .about-description {
+      padding-left: 0;
+      max-width: 90%;
+      text-align: center;
+    }
+  
+    .about-description p {
+      text-align: center;
+    }
+  
+    .offerte-btn {
+      text-align: center;
+      margin-top: 20px;
+    }
+  }
+  
