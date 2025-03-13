@@ -1,7 +1,7 @@
 # StraluxPrototype
 Stralux Website 
 
-To-Do:
+<h1>TO DO:</h1><br/>
 -Need to make Symbols for the diensten section. <br/>
 -Setup PHP Mailer to send mail to info@stralux.eu .<br/>
 -Make Site more cleaner (stay in black and white theme).<br/>
