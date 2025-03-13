@@ -6,7 +6,7 @@ Stralux Website
 -Setup PHP Mailer to send mail to info@stralux.eu .<br/>
 -Make Site more cleaner (stay in black and white theme).<br/>
 -Make site mobile friendly<br/>
--Make Formspree work with contact.html
+-Make Formspree work with contact.html<br/>
 
 
 
