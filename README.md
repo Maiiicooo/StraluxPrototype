@@ -5,7 +5,7 @@ Stralux Website
 -Need to make Symbols for the diensten section(Nesta). <br/>
 -Setup PHP Mailer to send mail to info@stralux.eu .<br/>
 -Make Site more cleaner (stay in black and white theme).<br/>
--Make site mobile friendly<br/>
+-Make site mobile and tablet responsive and clean<br/>
 -Make Formspree work with contact.html<br/>
 
 
