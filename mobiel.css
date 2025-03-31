@@ -1,112 +1,114 @@
 @media (max-width: 480px) {
-    .about-container {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-  
-    .about-image {
-      max-width: 80%;
-    }
-  
-    .about-details {
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-      text-align: center;
-    }
-  
-    .about-skills {
-      width: 100%;
-      max-width: 300px;
-      border-right: none;
-      border-bottom: 2px solid #000;
-      padding-bottom: 20px;
-      margin-bottom: 20px;
-    }
-  
-    .about-skills ul {
-      padding: 0;
-      text-align: center;
-    }
-  
-    .about-skills li {
-      display: block;
-      font-size: 1.2em;
-      margin-bottom: 10px;
-    }
-  
-    .about-description {
-      padding-left: 0;
-      max-width: 90%;
-      text-align: center;
-    }
-  
-    .about-description p {
-      text-align: center;
-    }
-  
-    .offerte-btn {
-      text-align: center;
-      margin-top: 20px;
-    }
-
-    .header-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .header-logo img {
-      max-width: 150px; /* Verkleint het logo */
-      height: auto;
-      margin-bottom: 10px; /* Zorgt voor ruimte onder het logo */
-    }
-  
-    .header-social {
-      display: flex;
-      justify-content: center;
-      gap: 10px;
-      margin-top: 10px;
-    }
-  
-    .header-social img {
-      width: 25px; /* Verklein de social icons */
-      height: 25px;
-    }
-
-    .menu-toggle {
-      display: block;
-      font-size: 28px;
-      cursor: pointer;
-      text-align: center;
-      padding: 10px;
-      background: #000000;
-      color: white;
-    }
-  
-    .nav-container {
-      display: none; /* Verberg standaard het menu */
-      flex-direction: column;
-      background: #000000;
-      text-align: center;
-    }
-  
-    .nav-container a {
-      display: block;
-      padding: 15px;
-      color: white;
-      text-decoration: none;
-      border-bottom: 1px solid #000000;
-    }
-  
-    .nav-container a:hover {
-      background: #000000;
-    }
-  
-    /* Toon het menu wanneer het actief is */
-    .nav-container.active {
-      display: flex;
-    }
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0px; /* Minder ruimte tussen de elementen */
+    padding: 10px; /* Optioneel: padding verkleind */
   }
-  
+
+  .about-image {
+    max-width: 80%;
+  }
+
+  .about-details {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    gap: 0px; /* Minder ruimte tussen skills en beschrijving */
+  }
+
+  .about-skills {
+    width: 100%;
+    max-width: 300px;
+    border-right: none;
+    border-bottom: 2px solid #000;
+    padding-bottom: 20px;
+    margin-bottom: 10px; /* Verminderde margin om het wit vlak te verkleinen */
+  }
+
+  .about-skills ul {
+    padding: 0;
+    text-align: center;
+  }
+
+  .about-skills li {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+
+  .about-description {
+    padding-left: 0;
+    max-width: 90%;
+    text-align: center;
+  }
+
+  .about-description p {
+    text-align: center;
+  }
+
+  .offerte-btn {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-logo img {
+    max-width: 150px; /* Verkleint het logo */
+    height: auto;
+    margin-bottom: 10px; /* Zorgt voor ruimte onder het logo */
+  }
+
+  .header-social {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .header-social img {
+    width: 25px; /* Verklein de social icons */
+    height: 25px;
+  }
+
+  .menu-toggle {
+    display: block;
+    font-size: 28px;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px;
+    background: #000000;
+    color: white;
+  }
+
+  .nav-container {
+    display: none; /* Verberg standaard het menu */
+    flex-direction: column;
+    background: #000000;
+    text-align: center;
+  }
+
+  .nav-container a {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid #000000;
+  }
+
+  .nav-container a:hover {
+    background: #000000;
+  }
+
+  /* Toon het menu wanneer het actief is */
+  .nav-container.active {
+    display: flex;
+  }
+}
