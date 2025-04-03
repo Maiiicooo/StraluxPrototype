@@ -202,10 +202,10 @@ nav {
 /* Service logo */
 .service-icon {
   margin: 0 auto;
-  width: 90px;
-  height: 90px;
+  width: 100px;
+  height: 110px;
   overflow: hidden;
-  border-radius: 50%;
+  
 }
 
 .service-icon img {
