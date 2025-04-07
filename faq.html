@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="mobiel.css" media="screen and (max-width: 480px)">
-  <link rel="icon" href="images/logotest.png">
+  <link rel="icon" href="/images/favicon-removebg-preview.png">
   <style>
     /* Faq Css */
     .faq-section {
@@ -54,6 +54,9 @@
       padding: 10px;
       position: relative;
       transition: background-color 0.3s;
+      color: #000000;           /* Voorkomt blauwe tekst */
+      -webkit-appearance: none; /* Verwijdert standaard styling op iOS */
+      appearance: none;
     }
 
     .faq-question:hover {
@@ -105,22 +108,19 @@
   });
 </script>
 
-
-
-
 <body>
   <header>
     <div class="container header-container">
       <div class="header-logo">
-        <img src="images/logotest.png" alt="Stralux Logo">
+        <img src="/images/logotest.png" alt="Stralux Logo">
       </div>
     </div>
     <div class="header-social">
       <a href="https://www.instagram.com/your_instagram_page" target="_blank">
-        <img src="images/insta.png" alt="Instagram">
+        <img src="/images/insta.png" alt="Instagram">
       </a>
       <a href="https://www.facebook.com/your_facebook_page" target="_blank">
-        <img src="images/facebook.png" alt="Facebook">
+        <img src="/images/facebook.png" alt="Facebook">
       </a>
     </div>
   </header>
@@ -185,8 +185,7 @@
       <div class="faq-item">
         <button class="faq-question">Hoe snel ontvang ik een reactie?</button>
         <div class="faq-answer">
-          <p>Na ontvangst van uw aanvraag streven wij ernaar binnen enkele werkdagen een prijsopgave te doen toekomen.
-          </p>
+          <p>Na ontvangst van uw aanvraag streven wij ernaar binnen enkele werkdagen een prijsopgave te doen toekomen.</p>
         </div>
       </div>
 
@@ -201,8 +200,7 @@
       <div class="faq-item">
         <button class="faq-question">Welke materialen worden gebruikt?</button>
         <div class="faq-answer">
-          <p>Wij maken gebruik van hoogwaardige en duurzame materialen, zorgvuldig afgestemd op uw project en wensen.
-          </p>
+          <p>Wij maken gebruik van hoogwaardige en duurzame materialen, zorgvuldig afgestemd op uw project en wensen.</p>
         </div>
       </div>
 
@@ -238,5 +236,4 @@
     });
   </script>
 </body>
-
 </html>
