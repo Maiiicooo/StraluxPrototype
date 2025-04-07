@@ -67,7 +67,6 @@ header {
   object-fit: contain;
 }
 
-
 /* Navigatie */
 nav {
   background-color: #ffffff;
@@ -168,7 +167,7 @@ nav {
   color: #555555;
 }
 
-/* Offerte knop styling (dezelfde als op de homepagina) */
+/* Offerte knop styling */
 .offerte-btn {
   text-align: center;
 }
@@ -208,14 +207,12 @@ nav {
   filter: grayscale(100%);
 }
 
-
 .map-container iframe {
   width: 100%;
   height: 100%;
   border: 0;
   filter: grayscale(100%);
 }
-
 
 /* Contact informatie sectie */
 .contact-info {
@@ -252,10 +249,17 @@ footer p {
   .nav-container {
     flex-direction: column;
   }
+
   .nav-link {
     margin: 5px 0;
   }
+
   .offerte-form {
     padding: 0 10px;
   }
+}
+
+/* Hamburger menu knop standaard verbergen op desktop */
+.menu-toggle {
+  display: none;
 }
