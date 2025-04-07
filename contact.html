@@ -12,7 +12,6 @@
   <link rel="stylesheet" href="mobiel.css" media="screen and (max-width: 480px)">
   <link rel="icon" href="images/favicon-removebg-preview.png">
   <style>
-    /* Hamburger-menu alleen zichtbaar op mobiel */
     .menu-toggle {
       display: none;
     }
@@ -22,14 +21,12 @@
       }
     }
 
-    /* Specifieke aanpassing voor deze pagina: zorg dat de social iconen verticaal staan */
     .header-social {
       display: flex;
       flex-direction: column;
       gap: 5px;
     }
 
-    /* Offerte knop */
     .offerte-btn {
       text-align: center;
       margin-top: 40px;
@@ -85,7 +82,7 @@
     </div>
   </header>
 
-  <!-- Hamburger menu knop (alleen zichtbaar op mobiel) -->
+  <!-- Hamburger menu knop -->
   <div class="menu-toggle" onclick="toggleMenu()">
     ☰
   </div>
@@ -108,9 +105,10 @@
         Elk project is uniek. Geef hieronder zo gedetailleerd mogelijk aan wat uw wensen zijn,
         zodat wij een goede inschatting kunnen maken.
       </p>
-      <form id="offerteForm" class="offerte-form" action="https://formkeep.com/f/c4ebb9acf308" method="post" enctype="multipart/form-data">
-        <!-- Verborgen input om na inzending terug te keren naar contact.html -->
+
+      <form id="offerteForm" class="offerte-form" action="https://formspree.io/f/xvgkvrwg" method="POST" enctype="multipart/form-data">
         <input type="hidden" name="_next" value="contact.html">
+        
         <div class="form-group">
           <label for="voornaam">Voornaam *</label>
           <input type="text" id="voornaam" name="voornaam" required>
@@ -153,6 +151,7 @@
           <label for="boodschap">Boodschap *</label>
           <textarea id="boodschap" name="boodschap" rows="5" required></textarea>
         </div>
+
         <!-- Submit knop -->
         <div class="offerte-btn">
           <button type="submit" id="submitButton">Verstuur aanvraag</button>
@@ -186,5 +185,4 @@
     </div>
   </footer>
 </body>
-
 </html>
