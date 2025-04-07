@@ -15,6 +15,7 @@
     .menu-toggle {
       display: none;
     }
+
     @media screen and (max-width: 480px) {
       .menu-toggle {
         display: block;
@@ -50,15 +51,22 @@
       color: #000000;
       border: 2px solid #000000;
     }
+
+    /* ✅ voorkomt blauwe telefoonnummers op iOS */
+    a[href^="tel"] {
+      color: inherit;
+      text-decoration: none;
+      font-weight: inherit;
+    }
   </style>
 </head>
 
 <script>
-  document.addEventListener("DOMContentLoaded", function() {
+  document.addEventListener("DOMContentLoaded", function () {
     const menuToggle = document.querySelector(".menu-toggle");
     const navMenu = document.querySelector(".nav-container");
 
-    menuToggle.addEventListener("click", function() {
+    menuToggle.addEventListener("click", function () {
       navMenu.classList.toggle("active");
     });
   });
@@ -106,9 +114,10 @@
         zodat wij een goede inschatting kunnen maken.
       </p>
 
-      <form id="offerteForm" class="offerte-form" action="https://formspree.io/f/xvgkvrwg" method="POST" enctype="multipart/form-data">
+      <form id="offerteForm" class="offerte-form" action="https://formspree.io/f/xvgkvrwg" method="POST"
+        enctype="multipart/form-data">
         <input type="hidden" name="_next" value="contact.html">
-        
+
         <div class="form-group">
           <label for="voornaam">Voornaam *</label>
           <input type="text" id="voornaam" name="voornaam" required>
@@ -161,7 +170,9 @@
       <!-- Google Maps -->
       <div class="offerte-map-container">
         <div class="map-container">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2506.8869321282214!2d3.381138576879435!3d51.073637242297956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c343b0b73dc7d5%3A0xf18758ca6ff9a178!2sKruisbergstraat%2018%2C%208755%20Ruiselede!5e0!3m2!1snl!2sbe!4v1741162252334!5m2!1snl!2sbe" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2506.8869321282214!2d3.381138576879435!3d51.073637242297956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c343b0b73dc7d5%3A0xf18758ca6ff9a178!2sKruisbergstraat%2018%2C%208755%20Ruiselede!5e0!3m2!1snl!2sbe!4v1741162252334!5m2!1snl!2sbe"
+            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
       </div>
 
@@ -170,7 +181,7 @@
       <div class="contact-info">
         <h3>Een andere vraag?</h3>
         <p>Email: info@stralux.eu</p>
-        <p>Telefoon: (+32) 468 49 00 85</p>
+        <p>Telefoon: <a href="tel:+32468490085">(+32) 468 49 00 85</a></p>
       </div>
     </section>
   </main>
@@ -185,4 +196,3 @@
     </div>
   </footer>
 </body>
-</html>
