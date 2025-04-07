@@ -51,11 +51,12 @@
       font-size: 1.1em;
       font-weight: 700;
       cursor: pointer;
-      padding: 10px;
+      padding: 10px 50px 10px 10px;
+      /* meer ruimte rechts voor het plusje */
       position: relative;
       transition: background-color 0.3s;
-      color: #000000;           /* Voorkomt blauwe tekst */
-      -webkit-appearance: none; /* Verwijdert standaard styling op iOS */
+      color: #000000;
+      -webkit-appearance: none;
       appearance: none;
     }
 
@@ -67,12 +68,15 @@
       content: "\002B";
       position: absolute;
       right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
       font-size: 1.5em;
       transition: transform 0.3s;
+      pointer-events: none;
     }
 
     .faq-item.active .faq-question::after {
-      transform: rotate(45deg);
+      transform: translateY(-50%) rotate(45deg);
     }
 
     .faq-answer {
@@ -185,7 +189,8 @@
       <div class="faq-item">
         <button class="faq-question">Hoe snel ontvang ik een reactie?</button>
         <div class="faq-answer">
-          <p>Na ontvangst van uw aanvraag streven wij ernaar binnen enkele werkdagen een prijsopgave te doen toekomen.</p>
+          <p>Na ontvangst van uw aanvraag streven wij ernaar binnen enkele werkdagen een prijsopgave te doen toekomen.
+          </p>
         </div>
       </div>
 
@@ -200,7 +205,8 @@
       <div class="faq-item">
         <button class="faq-question">Welke materialen worden gebruikt?</button>
         <div class="faq-answer">
-          <p>Wij maken gebruik van hoogwaardige en duurzame materialen, zorgvuldig afgestemd op uw project en wensen.</p>
+          <p>Wij maken gebruik van hoogwaardige en duurzame materialen, zorgvuldig afgestemd op uw project en wensen.
+          </p>
         </div>
       </div>
 
@@ -236,4 +242,5 @@
     });
   </script>
 </body>
+
 </html>
