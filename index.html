@@ -1,5 +1,4 @@
 <!-- 
-
           .:'
       __ :'__
    .'`__`-'__``.
@@ -7,37 +6,64 @@
   :_________:
    :_________`-;
 ART `.__.-.__.'
- -->
+-->
 <!DOCTYPE html>
 <html lang="nl">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Stralux - Zandstralen & Luchtgom</title>
-  <!-- Google Fonts voor een moderne uitstraling -->
+  <title>Stralux - Zandstraalbedrijf in Ruiselede | Zandstralen & Luchtgommen</title>
+
+  <!-- SEO Meta-tags -->
+  <meta name="description" content="Stralux is een gespecialiseerd zandstraalbedrijf uit Ruiselede, West-Vlaanderen. Wij bieden zandstralen, luchtgommen, gevelreiniging en meubelrenovatie met precisie en vakmanschap.">
+  <meta name="keywords" content="Stralux, Ruiselede, zandstralen, zandstraalbedrijf, luchtgommen, houten trap renoveren, meubels zandstralen, gevel zandstralen, West-Vlaanderen">
+  <meta name="author" content="Stralux">
+
+  <!-- Open Graph voor social media -->
+  <meta property="og:title" content="Stralux - Zandstralen & Luchtgommen | Ruiselede">
+  <meta property="og:description" content="Professioneel zandstraalbedrijf in Ruiselede voor meubels, gevels, trappen en meer.">
+  <meta property="og:image" content="https://maiiicooo.github.io/StraluxPrototype/images/logotest.png">
+  <meta property="og:url" content="https://maiiicooo.github.io/StraluxPrototype/">
+  <meta property="og:type" content="website">
+
+  <!-- FIX voor wit lijntje boven header -->
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+
   <!-- Externe CSS -->
   <link rel="stylesheet" href="https://maiiicooo.github.io/StraluxPrototype/style.css">
   <link rel="stylesheet" href="mobiel.css" media="screen and (max-width: 768px)">
   <link rel="stylesheet" href="tablet.css" media="screen and (min-width: 768px) and (max-width: 1024px)">
   <link rel="icon" href="/images/favicon-removebg-preview.png">
 
-
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Stralux",
+    "image": "https://maiiicooo.github.io/StraluxPrototype/images/logotest.png",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Straatnaam 123",
+      "addressLocality": "Ruiselede",
+      "postalCode": "8755",
+      "addressCountry": "BE"
+    },
+    "description": "Zandstraalbedrijf uit Ruiselede gespecialiseerd in zandstralen en luchtgommen van meubels, trappen en gevels.",
+    "telephone": "+32 470 12 34 56",
+    "url": "https://maiiicooo.github.io/StraluxPrototype/"
+  }
+  </script>
 </head>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const menuToggle = document.querySelector(".menu-toggle");
-    const navMenu = document.querySelector(".nav-container");
-
-    menuToggle.addEventListener("click", function () {
-      navMenu.classList.toggle("active");
-    });
-  });
-</script>
-
-
 
 <body>
   <!-- Header -->
@@ -61,7 +87,6 @@ ART `.__.-.__.'
   <div class="menu-toggle" onclick="toggleMenu()">
     ☰
   </div>
-
 
   <!-- Navigatie -->
   <nav>
@@ -90,7 +115,6 @@ ART `.__.-.__.'
     <section id="diensten" class="section">
       <h2>Diensten</h2>
       <div class="services-container">
-        <!-- Service card: Trappen -->
         <div class="service-card">
           <div class="service-icon">
             <img src="images/trap.png" alt="Trappen Logo">
@@ -101,7 +125,6 @@ ART `.__.-.__.'
             zonder dat een complete vervanging nodig is.
           </p>
         </div>
-        <!-- Service card: Parket -->
         <div class="service-card">
           <div class="service-icon">
             <img src="images/parket.png" alt="Parket Logo">
@@ -112,7 +135,6 @@ ART `.__.-.__.'
             oude lagen zodat u kunt kiezen uit hoogwaardige afwerkingen.
           </p>
         </div>
-        <!-- Service card: Meubels -->
         <div class="service-card no-bg">
           <div class="service-icon">
             <img src="images/meubel.png" alt="Meubels Logo">
@@ -123,7 +145,6 @@ ART `.__.-.__.'
             oude lagen creëer ik een moderne, verfijnde uitstraling.
           </p>
         </div>
-        <!-- Service card: Gevelrenovatie -->
         <div class="service-card">
           <div class="service-icon">
             <img src="images/gevel.png" alt="Gevelrenovatie Logo">
@@ -134,7 +155,6 @@ ART `.__.-.__.'
             verwering, zodat uw gevel er weer uitziet als nieuw.
           </p>
         </div>
-        <!-- Extra service card: Betonreiniging -->
         <div class="service-card">
           <div class="service-icon">
             <img src="images/natuursteen.png" alt="Betonreiniging Logo">
@@ -145,7 +165,6 @@ ART `.__.-.__.'
             schoonheid en uitstraling weer volledig tot hun recht komen.
           </p>
         </div>
-        <!-- Extra service card: Roestverwijdering -->
         <div class="service-card">
           <div class="service-icon">
             <img src="images/metaal.png" alt="Roestverwijdering Logo">
@@ -163,27 +182,21 @@ ART `.__.-.__.'
     <section id="projecten" class="section projecten-section">
       <h2>Projecten</h2>
       <div class="projecten-grid">
-        <!-- Project item 1 -->
         <div class="project-item">
           <img src="images/project1.JPG" alt="Gezandstraalde Keuken">
         </div>
-        <!-- Project item 2 -->
         <div class="project-item">
           <img src="images/project2.JPG" alt="Restauratie Kast">
         </div>
-        <!-- Project item 3 -->
         <div class="project-item">
-          <img src="images/project3.JPG" alt="Eiken Deuren &amp; Chambrang">
+          <img src="images/project3.JPG" alt="Eiken Deuren & Chambrang">
         </div>
-        <!-- Project item 4 -->
         <div class="project-item">
           <img src="images/project4.jpg" alt="Project Titel 4">
         </div>
-        <!-- Project item 5 -->
         <div class="project-item">
           <img src="images/project5.jpg" alt="Project Titel 5">
         </div>
-        <!-- Project item 6 -->
         <div class="project-item">
           <img src="images/project6.jpeg" alt="Project Titel 6">
         </div>
@@ -204,8 +217,16 @@ ART `.__.-.__.'
     </div>
   </footer>
 
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const menuToggle = document.querySelector(".menu-toggle");
+      const navMenu = document.querySelector(".nav-container");
 
-
+      menuToggle.addEventListener("click", function () {
+        navMenu.classList.toggle("active");
+      });
+    });
+  </script>
 
 </body>
 
