@@ -1,233 +1,111 @@
-<!-- 
-          .:'
-      __ :'__
-   .'`__`-'__``.
-  :__________.-'
-  :_________:
-   :_________`-;
-ART `.__.-.__.'
--->
 <!DOCTYPE html>
 <html lang="nl">
-
 <head>
   <meta charset="UTF-8">
+  <title>Stralux - Website in opbouw</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Stralux - Zandstraalbedrijf in Ruiselede | Zandstralen & Luchtgommen</title>
-
-  <!-- SEO Meta-tags -->
-  <meta name="description" content="Stralux is een gespecialiseerd zandstraalbedrijf uit Ruiselede, West-Vlaanderen. Wij bieden zandstralen, luchtgommen, gevelreiniging en meubelrenovatie met precisie en vakmanschap.">
-  <meta name="keywords" content="Stralux, Ruiselede, zandstralen, zandstraalbedrijf, luchtgommen, houten trap renoveren, meubels zandstralen, gevel zandstralen, West-Vlaanderen">
-  <meta name="author" content="Stralux">
-
-  <!-- Open Graph voor social media -->
-  <meta property="og:title" content="Stralux - Zandstralen & Luchtgommen | Ruiselede">
-  <meta property="og:description" content="Professioneel zandstraalbedrijf in Ruiselede voor meubels, gevels, trappen en meer.">
-  <meta property="og:image" content="https://maiiicooo.github.io/StraluxPrototype/images/logotest.png">
-  <meta property="og:url" content="https://maiiicooo.github.io/StraluxPrototype/">
-  <meta property="og:type" content="website">
-
-  <!-- FIX voor wit lijntje boven header -->
   <style>
-    html, body {
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: 'Montserrat', sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      animation: fadeIn 2s ease-in;
+    }
+
+    h1 img {
+      width: 300px;
+      max-width: 80%;
+      margin-bottom: 20px;
+      animation: fadeIn 3s ease-in;
+    }
+
+    p {
+      font-size: 1.2em;
+      color: #ccc;
+      margin-bottom: 30px;
+      animation: fadeIn 4s ease-in;
+    }
+
+    #countdown {
+      font-size: 2em;
+      letter-spacing: 2px;
+      color: #fff;
+      margin-bottom: 30px;
+      animation: fadeIn 5s ease-in;
+    }
+
+    .social {
+      animation: fadeIn 6s ease-in;
+    }
+
+    .social a img {
+      width: 32px;
+      height: 32px;
+      filter: grayscale(100%) brightness(1.5);
+      transition: filter 0.3s ease;
+    }
+
+    .social a img:hover {
+      filter: grayscale(0%) brightness(1);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
     }
   </style>
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
-
-  <!-- Externe CSS -->
-  <link rel="stylesheet" href="https://maiiicooo.github.io/StraluxPrototype/style.css">
-  <link rel="stylesheet" href="mobiel.css" media="screen and (max-width: 768px)">
-  <link rel="stylesheet" href="tablet.css" media="screen and (min-width: 768px) and (max-width: 1024px)">
-  <link rel="icon" href="/images/favicon-removebg-preview.png">
-
-  <!-- Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Stralux",
-    "image": "https://maiiicooo.github.io/StraluxPrototype/images/logotest.png",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Straatnaam 123",
-      "addressLocality": "Ruiselede",
-      "postalCode": "8755",
-      "addressCountry": "BE"
-    },
-    "description": "Zandstraalbedrijf uit Ruiselede gespecialiseerd in zandstralen en luchtgommen van meubels, trappen en gevels.",
-    "telephone": "+32 470 12 34 56",
-    "url": "https://maiiicooo.github.io/StraluxPrototype/"
-  }
-  </script>
 </head>
-
 <body>
-  <!-- Header -->
-  <header>
-    <div class="container header-container">
-      <div class="header-logo">
-        <img src="images/logotest.png" alt="Stralux Logo">
-      </div>
-    </div>
-    <div class="header-social">
-      <a href="https://www.instagram.com/stralux.eu?igsh=MXJwem9qaHo5bjk1cw%3D%3D&utm_source=qr">
-        <img src="images/insta.png" alt="Instagram">
-      </a>
-      <a href="https://www.facebook.com/your_facebook_page" target="_blank">
-        <img src="images/facebook.png" alt="Facebook">
-      </a>
-    </div>
-  </header>
 
-  <!-- Hamburger menu knop -->
-  <div class="menu-toggle" onclick="toggleMenu()">
-    ☰
+  <h1><img src="https://maiiicooo.github.io/StraluxPrototype/images/logotest.png" alt="Stralux Logo"></h1>
+
+  <p>Onze website is in opbouw.</p>
+
+  <div id="countdown">00:00:00:00</div>
+
+  <div class="social">
+    <a href="https://www.instagram.com/stralux.eu" target="_blank">
+      <img src="images/insta.png" alt="Instagram">
+    </a>
   </div>
 
-  <!-- Navigatie -->
-  <nav>
-    <div class="container nav-container">
-      <a href="#home" class="nav-link">Home</a>
-      <a href="overmij.html" class="nav-link">Over Mij</a>
-      <a href="faq.html" class="nav-link">Veelgestelde Vragen</a>
-      <a href="contact.html" class="nav-link">Contact</a>
-    </div>
-  </nav>
-
-  <!-- Hoofdinhoud -->
-  <main class="container">
-    <!-- Difference sectie -->
-    <section id="home" class="section difference-section">
-      <h2>Uw specialist in zandstralen & luchtgommen</h2>
-      <p>
-        Bij Stralux herstellen we de originele uitstraling van uw materialen met zorg en precisie. Of het nu gaat om
-        hout, natuursteen, beton of metaal wij laten elk oppervlak opnieuw stralen, met respect voor zijn authentieke
-        karakter.
-        Dankzij onze moderne technieken en vakmanschap ziet uw interieur of gevel er weer als nieuw uit.
-      </p>
-    </section>
-
-    <!-- Diensten sectie -->
-    <section id="diensten" class="section">
-      <h2>Diensten</h2>
-      <div class="services-container">
-        <div class="service-card">
-          <div class="service-icon">
-            <img src="images/trap.png" alt="Trappen Logo">
-          </div>
-          <h3>Trappen</h3>
-          <p>
-            Heeft uw houten trap behoefte aan een upgrade? Mijn verfijnde techniek geeft uw trap een frisse uitstraling
-            zonder dat een complete vervanging nodig is.
-          </p>
-        </div>
-        <div class="service-card">
-          <div class="service-icon">
-            <img src="images/parket.png" alt="Parket Logo">
-          </div>
-          <h3>Parket</h3>
-          <p>
-            Wilt u de charme van uw houten vloer behouden, maar is deze toe aan vernieuwing? Ik verwijder zorgvuldig
-            oude lagen zodat u kunt kiezen uit hoogwaardige afwerkingen.
-          </p>
-        </div>
-        <div class="service-card no-bg">
-          <div class="service-icon">
-            <img src="images/meubel.png" alt="Meubels Logo">
-          </div>
-          <h3>Meubels</h3>
-          <p>
-            Geef uw houten meubelen een frisse update zonder het karakter te verliezen. Met een zachte verwijdering van
-            oude lagen creëer ik een moderne, verfijnde uitstraling.
-          </p>
-        </div>
-        <div class="service-card">
-          <div class="service-icon">
-            <img src="images/gevel.png" alt="Gevelrenovatie Logo">
-          </div>
-          <h3>Gevelrenovatie</h3>
-          <p>
-            Geef uw gevel een frisse uitstraling. Met mijn technieken verwijder ik hardnekkig vuil, aanslag en
-            verwering, zodat uw gevel er weer uitziet als nieuw.
-          </p>
-        </div>
-        <div class="service-card">
-          <div class="service-icon">
-            <img src="images/natuursteen.png" alt="Betonreiniging Logo">
-          </div>
-          <h3>Natuursteen</h3>
-          <p>
-            Voor waardevolle natuursteen zorg ik voor een zorgvuldige reiniging en opfrissing, zodat de natuurlijke
-            schoonheid en uitstraling weer volledig tot hun recht komen.
-          </p>
-        </div>
-        <div class="service-card">
-          <div class="service-icon">
-            <img src="images/metaal.png" alt="Roestverwijdering Logo">
-          </div>
-          <h3>Metaal</h3>
-          <p>
-            Met gespecialiseerde technieken verwijder ik roest en oude verf van metalen oppervlakken, zodat deze een
-            duurzame en nette afwerking krijgen.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projecten sectie -->
-    <section id="projecten" class="section projecten-section">
-      <h2>Projecten</h2>
-      <div class="projecten-grid">
-        <div class="project-item">
-          <img src="images/project1.JPG" alt="Gezandstraalde Keuken">
-        </div>
-        <div class="project-item">
-          <img src="images/project2.JPG" alt="Restauratie Kast">
-        </div>
-        <div class="project-item">
-          <img src="images/project3.JPG" alt="Eiken Deuren & Chambrang">
-        </div>
-        <div class="project-item">
-          <img src="images/project4.jpg" alt="Project Titel 4">
-        </div>
-        <div class="project-item">
-          <img src="images/project5.jpg" alt="Project Titel 5">
-        </div>
-        <div class="project-item">
-          <img src="images/project6.jpeg" alt="Project Titel 6">
-        </div>
-      </div>
-      <div class="offerte-btn">
-        <a href="contact.html">Vraag je offerte aan</a>
-      </div>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <p>
-        &copy; 2025 Stralux. Alle rechten voorbehouden.<br>
-        Website gemaakt door Jaico.
-      </p>
-    </div>
-  </footer>
-
   <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const menuToggle = document.querySelector(".menu-toggle");
-      const navMenu = document.querySelector(".nav-container");
+    function updateCountdown() {
+      const launchDate = new Date("2025-04-27T00:00:00").getTime();
+      const now = new Date().getTime();
+      const timeLeft = launchDate - now;
 
-      menuToggle.addEventListener("click", function () {
-        navMenu.classList.toggle("active");
-      });
-    });
+      const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+      document.getElementById("countdown").innerHTML =
+        (days < 10 ? "0" : "") + days + ":" +
+        (hours < 10 ? "0" : "") + hours + ":" +
+        (minutes < 10 ? "0" : "") + minutes + ":" +
+        (seconds < 10 ? "0" : "") + seconds;
+
+      if (timeLeft < 0) {
+        document.getElementById("countdown").innerHTML = "Wij zijn live!";
+      }
+    }
+
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
   </script>
 
 </body>
-
 </html>
