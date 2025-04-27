@@ -11,6 +11,27 @@
   <link rel="stylesheet" href="contact.css">
   <link rel="stylesheet" href="mobiel.css" media="screen and (max-width: 480px)">
   <link rel="icon" href="images/favicon-removebg-preview.png">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Stralux",
+      "image": "https://maiiicooo.github.io/StraluxPrototype/images/logotest.png",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Straatnaam 123",
+        "addressLocality": "Ruiselede",
+        "postalCode": "8755",
+        "addressCountry": "BE"
+      },
+      "description": "Zandstraalbedrijf uit Ruiselede gespecialiseerd in zandstralen en luchtgommen van meubels, trappen en gevels.",
+      "telephone": "+32 470 12 34 56",
+      "url": "https://maiiicooo.github.io/StraluxPrototype/"
+    }
+    </script>
+
   <style>
     .menu-toggle {
       display: none;
@@ -61,6 +82,16 @@
   </style>
 </head>
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-V0R3J6TY45"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-V0R3J6TY45');
+</script>
+
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     const menuToggle = document.querySelector(".menu-toggle");
@@ -84,7 +115,7 @@
       <a href="https://www.instagram.com/stralux.eu?igsh=MXJwem9qaHo5bjk1cw%3D%3D&utm_source=qr" target="_blank">
         <img src="images/insta.png" alt="Instagram">
       </a>
-      <a href="https://www.facebook.com/your_facebook_page" target="_blank">
+      <a href="https://www.facebook.com/profile.php?id=100072271963974" target="_blank">
         <img src="images/facebook.png" alt="Facebook">
       </a>
     </div>
@@ -101,7 +132,7 @@
       <a href="index.html" class="nav-link">Home</a>
       <a href="overmij.html" class="nav-link">Over Mij</a>
       <a href="faq.html" class="nav-link">Veelgestelde Vragen</a>
-      <a href="contact.html" class="nav-link active">Offerte</a>
+      <a href="contact.html" class="nav-link active">Contact</a>
     </div>
   </nav>
 
