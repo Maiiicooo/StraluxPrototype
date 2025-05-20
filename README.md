@@ -1,6 +1,9 @@
 # StraluxPrototype
 Stralux Website 
 
+<h1>TO DO:</h1><br/>
+-Make Formspree work with contact.html<br/>
+-make favicon and add to all pages<br/>
 
 
 
