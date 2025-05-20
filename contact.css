@@ -68,9 +68,8 @@ header {
 }
 
 
-/* Navigatie */
 nav {
-  background-color: #ffffff;
+  background-color: #000000;
   border-bottom: 2px solid #000000;
 }
 
@@ -82,7 +81,7 @@ nav {
 }
 
 .nav-link {
-  color: #000000;
+  color: #ffffff;
   text-decoration: none;
   padding: 10px 20px;
   margin: 0 15px;
@@ -253,9 +252,11 @@ footer p {
   .nav-container {
     flex-direction: column;
   }
+
   .nav-link {
     margin: 5px 0;
   }
+
   .offerte-form {
     padding: 0 10px;
   }

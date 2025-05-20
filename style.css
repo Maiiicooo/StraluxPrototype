@@ -72,11 +72,11 @@ header {
   height: auto;
 }
 
-/* Navigatie styling */
 nav {
-  background-color: #ffffff;
+  background-color: #000000;
   border-bottom: 2px solid #000000;
 }
+
 
 .nav-container {
   display: flex;
@@ -86,7 +86,7 @@ nav {
 }
 
 .nav-link {
-  color: #000000;
+  color: #ffffff;
   text-decoration: none;
   padding: 10px 20px;
   margin: 0 15px;
@@ -277,13 +277,13 @@ nav {
 .project-item {
   background-color: #ffffff;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .project-item:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .project-caption {
