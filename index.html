@@ -16,22 +16,68 @@ ART `.__.-.__.'
   <title>Stralux - Zandstraalbedrijf in Ruiselede | Zandstralen & Luchtgommen</title>
 
   <!-- SEO Meta-tags -->
-  <meta name="description" content="Stralux is een gespecialiseerd zandstraalbedrijf uit Ruiselede, West-Vlaanderen. Wij bieden zandstralen, luchtgommen, gevelreiniging en meubelrenovatie met precisie en vakmanschap.">
-  <meta name="keywords" content="Stralux, Ruiselede, zandstralen, zandstraalbedrijf, luchtgommen, houten trap renoveren, meubels zandstralen, gevel zandstralen, West-Vlaanderen">
+  <meta name="description"
+    content="Stralux is een gespecialiseerd zandstraalbedrijf uit Ruiselede, West-Vlaanderen. Wij bieden zandstralen, luchtgommen, gevelreiniging en meubelrenovatie met precisie en vakmanschap.">
+  <meta name="keywords"
+    content="Stralux, Ruiselede, zandstralen, zandstraalbedrijf, luchtgommen, houten trap renoveren, meubels zandstralen, gevel zandstralen, West-Vlaanderen">
   <meta name="author" content="Stralux">
 
   <!-- Open Graph voor social media -->
   <meta property="og:title" content="Stralux - Zandstralen & Luchtgommen | Ruiselede">
-  <meta property="og:description" content="Professioneel zandstraalbedrijf in Ruiselede voor meubels, gevels, trappen en meer.">
+  <meta property="og:description"
+    content="Professioneel zandstraalbedrijf in Ruiselede voor meubels, gevels, trappen en meer.">
   <meta property="og:image" content="https://maiiicooo.github.io/StraluxPrototype/images/logotest.png">
   <meta property="og:url" content="https://maiiicooo.github.io/StraluxPrototype/">
   <meta property="og:type" content="website">
 
   <!-- FIX voor wit lijntje boven header -->
   <style>
-    html, body {
+    html,
+    body {
       margin: 0;
       padding: 0;
+    }
+
+    .home-hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+      flex-wrap: nowrap;
+      text-align: center;
+    }
+
+    .hero-text {
+      flex: 1;
+      text-align: center;
+    }
+
+    .hero-image {
+      flex-shrink: 0;
+      width: 380px;
+      max-width: 100%;
+      margin-right: 10px;
+      margin-left: -10px;
+      filter: grayscale(100%);
+    }
+
+    .hero-image img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    @media (max-width: 768px) {
+      .home-hero {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .hero-image {
+        width: 90%;
+        margin: 20px auto 0;
+      }
     }
   </style>
 
@@ -69,7 +115,7 @@ ART `.__.-.__.'
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-V0R3J6TY45"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+  function gtag() { dataLayer.push(arguments); }
   gtag('js', new Date());
 
   gtag('config', 'G-V0R3J6TY45');
@@ -112,13 +158,14 @@ ART `.__.-.__.'
   <main class="container">
     <!-- Difference sectie -->
     <section id="home" class="section difference-section">
-      <h2>Uw specialist in zandstralen & luchtgommen</h2>
-      <p>
-        Bij Stralux herstellen we de originele uitstraling van uw materialen met zorg en precisie. Of het nu gaat om
-        hout, natuursteen, beton of metaal wij laten elk oppervlak opnieuw stralen, met respect voor zijn authentieke
-        karakter.
-        Dankzij onze moderne technieken en vakmanschap ziet uw interieur of gevel er weer als nieuw uit.
-      </p>
+      <div class="home-hero">
+        <div class="hero-text">
+          <h2>Specialist in <br>zandstralen & luchtgommen</h2>
+        </div>
+        <div class="hero-image">
+          <img src="images/homepica.jpg" alt="Stralux aan het werk">
+        </div>
+      </div>
     </section>
 
     <!-- Diensten sectie -->
