@@ -79,6 +79,36 @@ ART `.__.-.__.'
         margin: 20px auto 0;
       }
     }
+
+    /* Alleen zichtbaar op mobiele schermen */
+    @media (max-width: 768px) {
+      .offerte-btn-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 20px;
+      }
+
+      .scroll-to-top img {
+        width: 40px;
+        height: auto;
+        cursor: pointer;
+        transition: transform 0.2s;
+        margin-top: 25px;
+      }
+
+      .scroll-to-top img:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    /* Verberg op desktop */
+    @media (min-width: 769px) {
+      .scroll-to-top {
+        display: none;
+      }
+    }
   </style>
 
   <!-- Google Fonts -->
@@ -268,9 +298,15 @@ ART `.__.-.__.'
           <img src="images/project6.jpeg" alt="Project Titel 6">
         </div>
       </div>
-      <div class="offerte-btn">
-        <a href="contact.html">Vraag je offerte aan</a>
+      <div class="offerte-btn-wrapper">
+        <div class="offerte-btn">
+          <a href="contact.html">Vraag je offerte aan</a>
+        </div>
+        <div class="scroll-to-top" onclick="scrollToTop()">
+          <img src="images/up.png" alt="Scroll naar boven" />
+        </div>
       </div>
+
     </section>
   </main>
 
@@ -294,6 +330,16 @@ ART `.__.-.__.'
       });
     });
   </script>
+
+  <script>
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+  </script>
+
 
 </body>
 
