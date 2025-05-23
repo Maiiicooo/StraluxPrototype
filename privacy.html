@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy- en Cookiebeleid - Stralux</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mobiel.css" media="screen and (max-width: 768px)">
+  <link rel="stylesheet" href="tablet.css" media="screen and (min-width: 768px) and (max-width: 1024px)">
+  <link rel="icon" href="/images/favicon-removebg-preview.png">
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      color: #000;
+      font-family: 'Montserrat', sans-serif;
+      line-height: 1.7;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    main.container {
+      margin-top: 60px;
+    }
+
+    h1,
+    h2 {
+      color: #000;
+    }
+
+    a {
+      color: #000;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+
+    .author {
+      margin-top: 50px;
+      font-size: 14px;
+      opacity: 0.7;
+    }
+
+    header,
+    nav {
+      background-color: #000;
+      padding: 10px 0;
+    }
+
+    .header-logo img {
+      height: 60px;
+    }
+
+    .header-social a img {
+      height: 25px;
+      margin-left: 10px;
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 10px 0;
+    }
+
+    .nav-link {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      position: relative;
+    }
+
+    .nav-link::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 100%;
+      height: 2px;
+      background-color: #fff;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s ease;
+    }
+
+    .nav-link:hover::after {
+      transform: scaleX(1);
+    }
+
+    .menu-toggle {
+      display: none;
+      font-size: 24px;
+      cursor: pointer;
+      padding: 10px;
+      text-align: right;
+      background-color: #000;
+      color: #fff;
+    }
+
+    @media (max-width: 768px) {
+      .menu-toggle {
+        display: block;
+      }
+
+      .nav-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        display: none;
+      }
+
+      .nav-container.active {
+        display: flex;
+      }
+
+      .header-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .header-logo img {
+        max-width: 150px;
+        /* Verkleint het logo */
+        height: auto;
+        margin-bottom: 10px;
+        /* Zorgt voor ruimte onder het logo */
+      }
+
+      .nav-container {
+        display: none;
+        /* Verberg standaard het menu */
+        flex-direction: column;
+        background: #000000;
+        text-align: center;
+      }
+
+      .nav-container a {
+        display: block;
+        padding: 15px;
+        color: white;
+        text-decoration: none;
+        border-bottom: 1px solid #000000;
+      }
+
+      .nav-container a:hover {
+        background: #000000;
+      }
+
+      /* Toon het menu wanneer het actief is */
+      .nav-container.active {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: block;
+        font-size: 28px;
+        cursor: pointer;
+        text-align: center;
+        padding: 10px;
+        background: #000000;
+        color: white;
+      }
+    }
+  </style>
+  <script>
+    function toggleMenu() {
+      const nav = document.querySelector('.nav-container');
+      nav.classList.toggle('active');
+    }
+  </script>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container header-container">
+      <div class="header-logo">
+        <img src="images/logotest.png" alt="Stralux Logo">
+      </div>
+      <div class="header-social">
+        <a href="https://www.instagram.com/stralux.eu?igsh=MXJwem9qaHo5bjk1cw%3D%3D&utm_source=qr">
+          <img src="images/insta.png" alt="Instagram">
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=100072271963974" target="_blank">
+          <img src="images/facebook.png" alt="Facebook">
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hamburger menu knop -->
+  <div class="menu-toggle" onclick="toggleMenu()">
+    ☰
+  </div>
+
+  <!-- Navigatie -->
+  <nav>
+    <div class="container nav-container">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="overmij.html" class="nav-link">Over Mij</a>
+      <a href="faq.html" class="nav-link">Veelgestelde Vragen</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hoofdinhoud -->
+  <main class="container">
+    <h1>Privacy- en Cookiebeleid</h1>
+
+    <p>
+      Deze website werd volledig zelf ontworpen en geprogrammeerd door Maico Minne.
+      Tijdens het gebruik van deze site worden enkel anonieme gegevens verzameld voor analytische doeleinden.
+      Dit helpt om de werking van de site te verbeteren en het gebruiksvriendelijker te maken.
+    </p>
+
+    <h2>Welke gegevens?</h2>
+    <p>
+      Er worden algemene gegevens verzameld zoals bezochte pagina’s, tijd op de site, gebruikte browser en toestel,
+      en hoe bezoekers op de site terechtkomen (bijvoorbeeld via een zoekmachine of sociale media).
+      Deze informatie wordt anoniem verwerkt en bevat geen persoonlijke gegevens.
+    </p>
+
+    <h2>Cookies</h2>
+    <p>
+      Deze website maakt enkel gebruik van cookies voor analyse. De cookies dienen om het gebruiksgedrag van bezoekers
+      te begrijpen
+      en de site te verbeteren. Er worden geen marketing- of trackingcookies geplaatst.
+    </p>
+
+    <h2>Contact</h2>
+    <p>
+      Voor vragen over dit privacybeleid kun je contact opnemen via:<br>
+      <a href="mailto:info@stralux.eu">info@stralux.eu</a>
+    </p>
+
+    <p class="author">
+      Dit privacybeleid werd opgesteld door Maico Minne.
+    </p>
+  </main>
+</body>
+
+</html>

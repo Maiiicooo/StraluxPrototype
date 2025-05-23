@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="contact.css">
   <link rel="stylesheet" href="mobiel.css" media="screen and (max-width: 480px)">
   <link rel="icon" href="images/favicon-removebg-preview.png">
+  <script src="cookie.js" defer></script>
 
   <!-- Structured Data -->
   <script type="application/ld+json">
@@ -86,21 +87,25 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-V0R3J6TY45"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+  function gtag() { dataLayer.push(arguments); }
   gtag('js', new Date());
 
   gtag('config', 'G-V0R3J6TY45');
 </script>
 
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const menuToggle = document.querySelector(".menu-toggle");
-    const navMenu = document.querySelector(".nav-container");
+  function loadGoogleAnalytics() {
+    const scriptTag = document.createElement('script');
+    scriptTag.src = "https://www.googletagmanager.com/gtag/js?id=G-V0R3J6TY45";
+    scriptTag.async = true;
+    document.head.appendChild(scriptTag);
 
-    menuToggle.addEventListener("click", function () {
-      navMenu.classList.toggle("active");
-    });
-  });
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    window.gtag = gtag;
+    gtag('js', new Date());
+    gtag('config', 'G-V0R3J6TY45', { 'anonymize_ip': true });
+  }
 </script>
 
 <body>
@@ -216,6 +221,13 @@
       </div>
     </section>
   </main>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.querySelector('.nav-container');
+      nav.classList.toggle('active');
+    }
+  </script>
 
   <!-- Footer -->
   <footer>

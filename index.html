@@ -9,6 +9,7 @@ ART `.__.-.__.'
 -->
 <!DOCTYPE html>
 <html lang="nl">
+<!-- niet kijken naar me code tis echt saus  -->
 
 <head>
   <meta charset="UTF-8">
@@ -22,16 +23,23 @@ ART `.__.-.__.'
     content="Stralux, Ruiselede, zandstralen, zandstraalbedrijf, luchtgommen, houten trap renoveren, meubels zandstralen, gevel zandstralen, West-Vlaanderen">
   <meta name="author" content="Stralux">
 
-  <!-- Open Graph voor social media -->
+  <!-- Open Graph social media -->
   <meta property="og:title" content="Stralux - Zandstralen & Luchtgommen | Ruiselede">
   <meta property="og:description"
     content="Professioneel zandstraalbedrijf in Ruiselede voor meubels, gevels, trappen en meer.">
   <meta property="og:image" content="https://maiiicooo.github.io/StraluxPrototype/images/logotest.png">
   <meta property="og:url" content="https://maiiicooo.github.io/StraluxPrototype/">
   <meta property="og:type" content="website">
+  <script src="cookie.js" defer></script>
+
 
   <!-- FIX voor wit lijntje boven header -->
   <style>
+    body.block-scroll {
+      overflow: hidden;
+    }
+
+
     html,
     body {
       margin: 0;
@@ -80,7 +88,7 @@ ART `.__.-.__.'
       }
     }
 
-    /* Alleen zichtbaar op mobiele schermen */
+    /* scroll top op mobiele schermen */
     @media (max-width: 768px) {
       .offerte-btn-wrapper {
         display: flex;
@@ -103,7 +111,7 @@ ART `.__.-.__.'
       }
     }
 
-    /* Verberg op desktop */
+    /* scroll top niet op desk */
     @media (min-width: 769px) {
       .scroll-to-top {
         display: none;
@@ -141,15 +149,22 @@ ART `.__.-.__.'
   </script>
 </head>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-V0R3J6TY45"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
-  gtag('js', new Date());
 
-  gtag('config', 'G-V0R3J6TY45');
+<script>
+  function loadGoogleAnalytics() {
+    const scriptTag = document.createElement('script');
+    scriptTag.src = "https://www.googletagmanager.com/gtag/js?id=G-V0R3J6TY45";
+    scriptTag.async = true;
+    document.head.appendChild(scriptTag);
+
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    window.gtag = gtag;
+    gtag('js', new Date());
+    gtag('config', 'G-V0R3J6TY45', { 'anonymize_ip': true });
+  }
 </script>
+
 
 <body>
   <!-- Header -->
@@ -287,7 +302,6 @@ ART `.__.-.__.'
         <div class="project-item">
           <img src="images/project10.PNG" alt="Project Titel 6">
         </div>
-
         <div class="project-item">
           <img src="images/project4.jpg" alt="Project Titel 4">
         </div>
@@ -296,6 +310,24 @@ ART `.__.-.__.'
         </div>
         <div class="project-item">
           <img src="images/project6.jpeg" alt="Project Titel 6">
+        </div>
+        <div class="project-item">
+          <img src="images/project16.jpg" alt="Project Titel 4">
+        </div>
+        <div class="project-item">
+          <img src="images/project17.jpg" alt="Project Titel 5">
+        </div>
+        <div class="project-item">
+          <img src="images/project18.jpg" alt="Project Titel 6">
+        </div>
+        <div class="project-item">
+          <img src="images/project15.jpg" alt="Project Titel 4">
+        </div>
+        <div class="project-item">
+          <img src="images/project19.jpg" alt="Project Titel 5">
+        </div>
+        <div class="project-item">
+          <img src="images/project20.jpg" alt="Project Titel 6">
         </div>
       </div>
       <div class="offerte-btn-wrapper">
@@ -306,7 +338,6 @@ ART `.__.-.__.'
           <img src="images/up.png" alt="Scroll naar boven" />
         </div>
       </div>
-
     </section>
   </main>
 
@@ -339,8 +370,6 @@ ART `.__.-.__.'
       });
     }
   </script>
-
-
 </body>
 
 </html>
